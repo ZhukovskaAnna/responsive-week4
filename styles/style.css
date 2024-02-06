@@ -1,23 +1,35 @@
+:root {
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --default-font: "Poppins", sans-serif;
+  --heading-font: "Playfair Display", serif;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--heading-font);
   font-weight: bold;
 }
+h2 {
+  font-size: 62px;
+}
 p {
-  font-family: "Poppins", sans-seri;
+  font-family: var(--default-font);
   font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
 }
 .hero {
-  background-color: #f9f7fe;
+  background-color: var(--secondary-color);
   text-align: center;
   padding: 160px 20px;
 }
 .hero p {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--default-font);
   font-weight: bold;
   font-size: 36px;
   margin: 0;
@@ -27,17 +39,54 @@ p {
   font-size: 96px;
 }
 .hero h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--default-font);
   font-weight: normal;
   font-size: 24px;
   line-height: 2;
   color: #272142;
 }
 .btn-branding {
-  background-color: #6c63ff;
+  background-color: var(--branding-color);
   color: white;
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
   padding: 18px 30px;
+}
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 18px 30px;
+}
+.session-description {
+  padding: 120px 60px;
+}
+img {
+  height: auto;
+  max-width: 50%;
+}
+@media (max-width: 960px) {
+  .session-description {
+    padding: 0;
+    text-align: center;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .hero h1 {
+    font-size: 66px;
+    line-height: 1.5;
+  }
+  .hero p {
+    font-size: 26px;
+  }
+  .hero h2 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 50px;
+  }
 }
