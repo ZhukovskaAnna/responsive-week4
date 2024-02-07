@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-     <div class="container nav-container">
+      <div class="container nav-container">
     <nav class="d-flex justify-content-between">
        <a href="/" class="nav-logo">
       <p>ANNA ZHUKOVSKA
@@ -42,41 +42,57 @@
       PHOTOGRAPHY </span>
         </p></a>
         <ul>
-          <li class="active">
-            <a href="/">
+          <li>
+            <a href="/" title="Homepage">
             HOME</a></li>
-          <li>
-           <a href="about.html">
+          <li class="active">
+           <a href="about.html"  title="About Anna Zhukovska">
             ABOUT</a></li>
-          <li>
-            <a href="gallery.html">
+          <li >
+            <a href="gallery.html"  title="Gallery page"> 
             GALLERY</a>
             </li>
-          <li>
-              <a href="contact.html">
+          <li >
+              <a href="contact.html"  title="Contact Anna Zhukovska">
         CONTACT</a></li>
         </ul>
       </div>
     </nav>
-    <div class="container content-container">
+    <div class="container content-container content-container-about">
       <div class="row">
         <div class="col-md-7">
           <div class="content">
             <h1 class="mb-5">Hi, I am Anna Zhukovska</h1>
             <h2 class="mb-5">Photographer, based in Portugal</h2>
-            <p class="mb-4">
+            <p class="mb-4 text-start">
               For anyone who wants to start learning code, this workshop is very
               interesting. You will be challenged with different exercises, and
               everything is well explained, homework and deadlines are good for
               keep focus
             </p>
-            <a href="#" class="btn btn-branding">See my gallery</a>
+            <a href="gallery.html" class="btn btn-branding">See my gallery</a>
           </div>
         </div>
         <div class="col-md-5">
-          <img src="images/Anna.JPG" alt="Anna" class="img-fluid about-photo" />
+          <img src="images/Anna.JPG" alt="Anna" class="img-fluid about-photo rounded" />
         </div>
       </div>
+      <footer>
+<a href="mailto:zhukovska.anna@gmail.com" class="email-link mb-3">zhukovska.anna@gmail.com</a>
+<div class="social-links d-flex justify-content-center">
+  <a href="https://www.instagram.com/anna_zhukovska/" target="_blank"> 
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+   <a href="https://twitter.com/Anna_Zhukovska" target="_blank"> <i class="fa-solid fa-x"></i>
+  </a>
+    <a href="https://github.com/ZhukovskaAnna" target="_blank"><i class="fa-brands fa-github"></i>
+    </a>
+</div>
+<p class="text-center mt-4">
+This project was coded by <a href="https://twitter.com/Anna_Zhukovska">Anna Zhukovska</a> , and it is <a href="https://github.com/ZhukovskaAnna">open-sourced ✌️</a>
+</p>
+    </footer> 
     </div>
+
   </body>
 </html>
