@@ -26,7 +26,7 @@ p {
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
-  padding: 190px 20px;
+  padding: 160px 20px;
 }
 .content-container {
   padding: 190px 20px;
@@ -95,6 +95,34 @@ img {
 .about-img {
   max-width: 65%;
 }
+nav {
+  padding: 20px 0;
+  margin-bottom: 0%;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+}
+nav ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+nav a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover {
+  color: var(--branding-color);
+}
+nav li.active a {
+  color: var(--branding-color);
+}
+.nav-logo-photography {
+  letter-spacing: 0.17em;
+}
 @media (max-width: 960px) {
   .session-description {
     padding: 0;
@@ -136,4 +164,18 @@ img {
   .content h1 {
     font-size: 44px;
   }
+  .content-container {
+    margin-top: 180px;
+    display: block;
+  }
+  .nav-logo {
+    display: none;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.contact-links {
+  color: var(--branding-color);
 }
